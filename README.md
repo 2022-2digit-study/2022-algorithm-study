@@ -45,9 +45,13 @@
 
 # 방식
 
+### Branch 
+
 * 먼저 해당 레파지토리(Organization Repository)에 직접적으로 `Push`하는 것을 엄금합니다. 🚫
 
 * `Organization Repository`의 `branch` 목록을 보면 본인의 이름으로 된 branch가 생성되어 있습니다. 해당 브런치가 `PR Target Repository`가 됩니다.
+
+### Pull Request
 
 * 모든 `PUSH`는 `Fork`를 통해 본인의 레파지토리에 복제한 후, 본인의 이름과 같은 `branch`에 `Pull Request(PR)`를 통해 반영하게 됩니다. 
  - [`Pull Request`에 대해 알고 싶다면?](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B9%83%ED%97%99-PRPull-Request-%EB%B3%B4%EB%82%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-folk-issue)
@@ -57,18 +61,38 @@
 
 * 반영을 위한 최소 `Approve` 수는 `1개` 입니다. ✅
 
-* `Code Review`의 종류에 제한은 없습니다. 해당 코드에서 고쳐야 할 부분 뿐 아니라, 자신과 다른점, 배운 점, 어떤 것이 더 효율적인지 등 본인의 성장을 위해서 어떤 것이든 의견을 나누길 바랍니다.👍<br>
-> _- 코드리뷰 예시 사진 -_
-<img width="798" alt="image" src="https://user-images.githubusercontent.com/59782504/165787003-d5ed07f6-2a31-4483-ada0-767b1cd35e5c.png">
+* Pull Request의 제목 양식은 아래와 같습니다.
+> (이름) 문제 사이트 제목[예:백준, 프로그래머스 등] - 문제 제목1
+> 예: (Giraffe) 프로그래머스 - 프렌즈 사천성
+
+### Merge Strategy
 
 * `Merge` 전략은 `Git History`의 깔끔한 관리를 위해 (`Squash` || `Rebase`)로 한정합니다. 
   _(참고 Link: [Git Merge Strategy 비교](https://inmoonlight.github.io/2021/07/11/Git-merge-strategy/))_
   <br> _(`Merge`로 할 경우 해당 멤버의 `Branch`에 접속하여 `Reset` 하겠음. 충돌로 인해 `rabase` or `squash`가 되지 않는 경우, 질문하거나, 스스로 원인파악 후 직접 히스토리를 관리하여, `Git History`를 정리할 것.)_
 
+### Code Review & Discussion
+
+* `Code Review`의 종류에 제한은 없습니다. 해당 코드에서 고쳐야 할 부분 뿐 아니라, 자신과 다른점, 배운 점, 어떤 것이 더 효율적인지 등 본인의 성장을 위해서 어떤 것이든 의견을 나누길 바랍니다.👍<br>
+> _- 코드리뷰 예시 사진 -_
+<img width="798" alt="image" src="https://user-images.githubusercontent.com/59782504/165787003-d5ed07f6-2a31-4483-ada0-767b1cd35e5c.png">
+
+
 * 문제를 풀다가 어려운 부분이 있다면 `Discussion`을 활용할 수 있습니다. 모르는 문제나 알고리즘적인 성능 등에 대해 질문하고, 의견을 교환합니다. 👩‍👩‍👧‍👦
 <img width="131" alt="image" src="https://user-images.githubusercontent.com/59782504/165785529-80f8821e-9c78-493d-92c6-ddf3ae64c7cc.png">
 
-* 정답 코드를 보는 것은 허용합니다. **단 주석이나, Wiki를 통해 어떤 것을 배웠는지 남겨야 합니다.** 📖
+### Comment
+
+* 문제 풀이 주석의 첫 부분에는 문제의 제목, 문제의 주석이 담겨야 합니다.
+> in solution.py
+```python
+# 프로그래머스 - http://문제링크.com
+
+def solution():
+    return "Hello World"
+```
+
+* 정답 코드를 보는 것은 허용합니다. **단 `주석`이나, `Wiki`를 통해 어떤 것을 배웠는지 남겨야 합니다.** 📖
 <img width="97" alt="image" src="https://user-images.githubusercontent.com/59782504/165789472-6098a25d-8451-4c16-99a1-4cf5e8a23357.png">
 
 ## Benefit
