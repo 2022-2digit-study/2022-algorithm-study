@@ -38,7 +38,7 @@
  - [`Pull Request`에 대해 알고 싶다면?](https://inpa.tistory.com/entry/GIT-%E2%9A%A1%EF%B8%8F-%EA%B9%83%ED%97%99-PRPull-Request-%EB%B3%B4%EB%82%B4%EB%8A%94-%EB%B0%A9%EB%B2%95-folk-issue)
 
 * `Github Pull Request`의 경우 문제를 풀고 `Push`한 후 `PR`을 하였는데, **다시 다른 문제를 풀어 `Push` 한다면** 해당 커밋 리스트가 그대로 반영이 되어 한 `PR`당 문제가 쌓이면 보기 좋지 않습니다. 
-> 이런 일을 방지하기 위해 `Target Repository(Organization Repository)`의 `branch`는 만들어져 있는 자신의 이름으로 하되, `Origin Repository(본인의 Fork된 Repository)`의 `Branch`는 문제 번호, 문제를 푼 날짜 등으로 설정하여, `1~2개`까지의 문제만 `PR`할 수 있도록 합니다. 
+> 이런 일을 방지하기 위해 `Target Repository(Organization Repository)`의 `branch`는 만들어져 있는 자신의 이름으로 하되, `Origin Repository(본인의 Fork된 Repository)`의 `Branch`는 문제 번호, 문제를 푼 날짜 등으로 설정하여, **`PR`당 최대 `1~2개`까지의 문제만 포함할 수 있도록 합니다. **
 
 * 반영을 위한 최소 `Approve` 수는 `1개` 입니다. ✅
 
