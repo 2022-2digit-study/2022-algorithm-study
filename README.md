@@ -31,6 +31,7 @@
 # Code Style
 
 > 필수 사항은 아니나 따르시는 것이 좋습니다. _(Code Style은 강력하게 Review 하겠습니다)_
+>
 > \+ Jetbrains 계열 IDE의 경우 `Ctrl` + `Alt` + `L` (Windows, Linux), `Command` + `Option` + `L` (Mac OS)로 코드 정리를 쉽게 할 수 있습니다.
 
 * Python 언어의 경우 PEP8 스타일가이드를 따라 코드를 작성하도록 합니다.
