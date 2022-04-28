@@ -28,6 +28,18 @@
 
 <hr>
 
+# Code Style
+
+> 필수 사항은 아니나 따르시는 것이 좋습니다. _(Code Style은 강력하게 Review 하겠습니다)_
+> \+ Jetbrains 계열 IDE의 경우 `Ctrl` + `Alt` + `L` (Windows, Linux), `Command` + `Option` + `L` (Mac OS)로 코드 정리를 쉽게 할 수 있습니다.
+
+* Python 언어의 경우 PEP8 스타일가이드를 따라 코드를 작성하도록 합니다.
+> [Python PEP8 Style Guide](https://peps.python.org/pep-0008/)
+
+* Java의 경우 Google Java Style Guide를 따라 코드를 작성하도록 합니다.
+> [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
+
+
 # 방식
 
 * 먼저 해당 레파지토리(Organization Repository)에 직접적으로 `Push`하는 것을 엄금합니다. 🚫
@@ -68,6 +80,9 @@
 > 아파도 3번 연속 아플 수는 없겠죠..?
 
 * `Code Review`는 최소 주당 `2회` 이상 하지 않을 시 강퇴합니다. 🚫
+> 다른 사람의 코드도 봐주세요 😭
+
+* Merge가 주당 1회 이상 하지 않을 시 강퇴합니다. (첫주는 제외합니다.) 🚫
 
 ## 가상 시나리오
 
