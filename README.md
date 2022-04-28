@@ -39,6 +39,9 @@
 * Java의 경우 Google Java Style Guide를 따라 코드를 작성하도록 합니다.
 > [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html)
 
+* C++의 경우 Google C++ Style Guide를 따라 코드를 작성하도록 합니다.
+> [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html)
+
 
 # 방식
 
