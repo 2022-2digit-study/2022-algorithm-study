@@ -146,5 +146,5 @@ C++언어 기반으로 되어 있는 강의이며 언어가 익숙하시다면, 
 # Kakao Open Chat
 > 공지사항, 사소한 질문, 스터디 관련 질문, 경조사 알림 등은 해당 오픈채팅방을 활용하도록 할게요! 👩‍👩‍👧‍👦
 
-[카카오톡 오픈채팅](https://open.kakao.com/o/g8yVWVde)
+[카카오톡 오픈채팅](https://open.kakao.com/o/g8yVWVde) <br>
 참여 코드: `2digits`
