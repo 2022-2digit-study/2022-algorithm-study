@@ -143,6 +143,7 @@ C++언어 기반으로 되어 있는 강의이며 언어가 익숙하시다면, 
 유투브 링크: [동빈나 - 실전알고리즘 강의](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz)
 
 <hr>
+
 # Kakao Open Chat
 
 > 공지사항, 사소한 질문, 스터디 관련 질문, 경조사 알림 등은 해당 오픈채팅방을 활용하도록 할게요! 👩‍👩‍👧‍👦
