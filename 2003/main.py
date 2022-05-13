@@ -1,4 +1,4 @@
-from itertools import combinations
+# (BOJ - 2003) 수들의 합: https://www.acmicpc.net/problem/2003
 
 N, M = map(int, input().split())
 nums = list(map(int, input().split()))
