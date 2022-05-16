@@ -31,6 +31,7 @@
 # Code Style
 
 > 필수 사항은 아니나 따르시는 것이 좋습니다. _(Code Style은 강력하게 Review 하겠습니다)_
+>
 > \+ Jetbrains 계열 IDE의 경우 `Ctrl` + `Alt` + `L` (Windows, Linux), `Command` + `Option` + `L` (Mac OS)로 코드 정리를 쉽게 할 수 있습니다.
 
 * Python 언어의 경우 PEP8 스타일가이드를 따라 코드를 작성하도록 합니다.
@@ -141,3 +142,11 @@ def solution():
 C++언어 기반으로 되어 있는 강의이며 언어가 익숙하시다면, 설명과 이론 부분이 좋은 강의이기 때문에 추천합니다. <br>
 유투브 링크: [동빈나 - 실전알고리즘 강의](https://www.youtube.com/watch?v=qQ5iLNjpxSk&list=PLRx0vPvlEmdDHxCvAQS1_6XV4deOwfVrz)
 
+<hr>
+
+# Kakao Open Chat
+
+> 공지사항, 사소한 질문, 스터디 관련 질문, 경조사 알림 등은 해당 오픈채팅방을 활용하도록 할게요! 👩‍👩‍👧‍👦
+
+[카카오톡 오픈채팅](https://open.kakao.com/o/g8yVWVde) <br>
+참여 코드: `2digits`
