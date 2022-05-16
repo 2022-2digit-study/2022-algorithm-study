@@ -311,3 +311,6 @@ cython_debug/
 #.idea/
 
 # End of https://www.toptal.com/developers/gitignore/api/jetbrains+all,python,c++,java
+**/.idea/**
+**/cmake-build-debug/**
+**/CMakeLists.txt
