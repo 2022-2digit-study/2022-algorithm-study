@@ -13,7 +13,7 @@ while low <= high:
     mid = (low + high) // 2
     if sum([tree - mid for tree in trees if (tree - mid) > 0]) >= M:
         min_h = mid
-        low += 1
+        low = mid +1
     else:
         high -= 1
 
