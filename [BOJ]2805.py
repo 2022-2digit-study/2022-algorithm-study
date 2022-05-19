@@ -15,6 +15,6 @@ while low <= high:
         min_h = mid
         low = mid +1
     else:
-        high -= 1
+        high = mid - 1
 
 print(min_h)
