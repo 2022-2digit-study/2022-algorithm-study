@@ -26,28 +26,17 @@ class Tree:
             self.nodes[self.get_node_idx(parent)].right_child = self.nodes[self.get_node_idx(right)]
 
 
-def pre_order(node: Node):
+def xxx_order(xxx: str, node: Node) -> None:
     if not node:
         return
-    print(node.data, end="")  # 전위 순회
-    pre_order(node.left_child)
-    pre_order(node.right_child)
-
-
-def in_order(node: Node):
-    if not node:
-        return
-    in_order(node.left_child)
-    print(node.data, end="")  # 중위 순회
-    in_order(node.right_child)
-
-
-def post_order(node: Node):
-    if not node:
-        return
-    post_order(node.left_child)
-    post_order(node.right_child)
-    print(node.data, end="")  # 후위 순회
+    if xxx.lower() == "pre":
+        print(node.data, end="")  # 전위 순회
+    xxx_order(xxx, node.left_child)
+    if xxx.lower() == "in":
+        print(node.data, end="")  # 중위 순회
+    xxx_order(xxx, node.right_child)
+    if xxx.lower() == "post":
+        print(node.data, end="")
 
 
 size = int(input())
@@ -57,9 +46,6 @@ for _ in range(size):
     parent, lchild, rchild = sys.stdin.readline().split()
     t.insert_node(parent, lchild, rchild)
 
-pre_order(t.root)
-print()
-in_order(t.root)
-print()
-post_order(t.root)
-print()
+for xxx in ["pre", "in", "post"]:
+    xxx_order(xxx=xxx, node=t.root)
+    print()
