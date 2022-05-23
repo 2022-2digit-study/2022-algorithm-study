@@ -9,7 +9,7 @@ trees = [0] * (4 * N)
 
 def init(start, end, ti):
     if start == end:
-        trees[ti] = nodes[start - 1]
+        trees[ti] = nodes[start]
     else:
         mid = (start + end) // 2
         trees[ti] = init(start, mid, ti * 2) + init(mid + 1, end, ti * 2 + 1)
@@ -29,16 +29,17 @@ def segment_sum(start, end, left, right, ti):
 def update_node(start, end, node, ti, dif):
     if start <= node <= end:
         trees[ti] += dif
-        if start != end:  # 리프노드
+        if start != end:  # 리프노드가 아닌 경우
             mid = (start + end) // 2
             update_node(start, mid, node, ti * 2, dif)
             update_node(mid + 1, end, node, ti * 2 + 1, dif)
 
 
-init(1, N, 1)
+init(0, N - 1, 1)
 for _ in range(M + K):
     a, b, c = map(int, sys.stdin.readline().split())
     if a == 1:  # 수정
-        update_node(1, N, b, 1, c - nodes[b-1])
+        update_node(0, N - 1, b - 1, 1, c - nodes[b - 1])
+        nodes[b - 1] = c
     else:  # 구간 합
-        print(segment_sum(1, N, b, c, 1))
+        print(segment_sum(0, N - 1, b - 1, c - 1, 1))
