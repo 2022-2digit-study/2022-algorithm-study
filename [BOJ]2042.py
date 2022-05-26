@@ -39,7 +39,7 @@ def update(node, start, end, index, diff):
 N, M, K = map(int, sys.stdin.readline().split())
 
 arr = [int(sys.stdin.readline()) for _ in range(N)]
-tree = [0] * 3000000
+tree = [0] * (len(arr) * 4)
 init_tree(1, 0, N - 1)
 
 for _ in range(M + K):
