@@ -12,18 +12,6 @@ class Edge:
     def __lt__(self, edge):
         return self.cost < edge.cost
 
-    def __lte__(self, edge):
-        return self.cost <= edge.cost
-
-    def __gt__(self, edge):
-        return self.cost > edge.cost
-
-    def __gte__(self, edge):
-        return self.cost >= edge.cost
-
-    def __eq__(self, edge):
-        return self.cost == edge.cost
-
 
 class UnionFind:
     def __init__(self, size):
@@ -49,8 +37,10 @@ class UnionFind:
 N = int(sys.stdin.readline())
 M = int(sys.stdin.readline())
 
+# 1. 모든 노드를 트리로 만들기
 uf = UnionFind(N + 1)
 
+# 2. 정점을 연결하는 간선을 비용 기준으로 오름차순 정렬하기
 edges = []
 for _ in range(M):
     a, b, c = map(int, sys.stdin.readline().split())
@@ -59,9 +49,12 @@ edges.sort()
 
 answer = 0
 
+# 3. 적은 비용을 가진 간선 순으로 간선을 연결하는 노드를 기준으로 트리를 합침
 for edge in edges:
     if uf.find(edge.src) != uf.find(edge.dst):
         uf.union(edge.src, edge.dst)
         answer += edge.cost
-
+    # 3-1: 사이클이 발생할 경우 해당 간선을 버린다.
+    else:
+        continue
 print(answer)
