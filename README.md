@@ -135,7 +135,7 @@ def solution():
 
 # 알고리즘, 자료구조 문제를 풀어본 적이 없다면? 📚
 
-관련 도서 링크: [파이썬 알고리즘 공부 도서](https://1drv.ms/b/s!AumORQdGTpjTg8Bj7-yizwCBij5ukA?e=8fcSzU) <br>
+관련 도서 링크: [파이썬 알고리즘 공부 도서](https://1drv.ms/b/s!AumORQdGTpjTg8Bj7-yizwCBij5ukA?e=OflR47) <br>
 > _저작권 문제로 public하게 공개가 불가능하기 떄문에 필요하신 분은 저에게 비밀번호를 물어주세요!_
 
 ## 동빈나 - 실전 알고리즘 강의 📺
