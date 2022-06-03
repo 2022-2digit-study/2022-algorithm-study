@@ -6,7 +6,7 @@ N, M = map(int, sys.stdin.readline().split())
 
 answer = []
 graph = [[] for _ in range(N + 1)]
-inDegree = [0 for _ in range(N + 1)]
+inDegree = [0] * (N+1)
 
 for _ in range(M):
     a, b = map(int, sys.stdin.readline().split())
