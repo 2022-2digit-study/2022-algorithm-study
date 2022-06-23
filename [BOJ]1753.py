@@ -18,7 +18,6 @@ def dijkstra(start):
             continue
 
         for vertex, weight in graph[now]:
-            cost = dist + weight
 
             if cost < distance[vertex]:
                 distance[vertex] = cost
