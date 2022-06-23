@@ -19,7 +19,7 @@ def dijkstra(start):
 
         for vertex, weight in graph[now]:
 
-            if cost < distance[vertex]:
+            if (cost := dist + weight) < distance[vertex]:
                 distance[vertex] = cost
                 heapq.heappush(queue, (cost, vertex))
 
